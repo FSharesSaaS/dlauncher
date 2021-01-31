@@ -28,7 +28,7 @@ const BaseGraphiQLPage: React.FC = () => {
         <Col className="gutter-row" span={24} key={"col-drif-graph"}>
           <WidgetBox>
             <WidgetContent>
-              <Iframe url="http://localhost:8080/graphiql" width="100%" height="900px" frameBorder={0} />
+              <Iframe url="https://fscan.valicn.com/graphiql" width="100%" height="900px" frameBorder={0} />
             </WidgetContent>
           </WidgetBox>
         </Col>
