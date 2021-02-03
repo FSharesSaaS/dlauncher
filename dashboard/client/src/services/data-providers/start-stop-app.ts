@@ -19,7 +19,7 @@ import { StartAppRequest, StopAppRequest } from '../../pb/dashboard_pb';
 import * as PbDashboard from '../../pb/dashboard_pb';
 
 const client = new DashboardClient(
-  process.env.REACT_APP_DASHBOARD_GRPC_WEB_URL || 'https://fscan_backend.valicn.com/api'
+  process.env.REACT_APP_DASHBOARD_GRPC_WEB_URL || 'https://fscan-backend.valicn.com/api'
 );
 
 export const startApp = async (

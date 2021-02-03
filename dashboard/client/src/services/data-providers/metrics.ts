@@ -142,7 +142,7 @@ export function useStreamMetrics(params: { appId?: string; maxCount: number }): 
     // block until AppsList grpc endpoint is live
     await retryFunc(tryGetAppsList);
     client = grpc.client(Dashboard.AppsMetrics, {
-      host: process.env.REACT_APP_DASHBOARD_GRPC_WEB_URL || "https://fscan_backend.valicn.com/api",
+      host: process.env.REACT_APP_DASHBOARD_GRPC_WEB_URL || "https://fscan-backend.valicn.com/api",
     });
 
     if (!client) console.log("error creating streaming client");

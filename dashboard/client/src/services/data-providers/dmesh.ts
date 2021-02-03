@@ -22,7 +22,7 @@ export interface Peer extends PbDashboard.DmeshClient.AsObject {
 }
 
 const client = new DashboardClient(
-  process.env.REACT_APP_DASHBOARD_GRPC_WEB_URL || 'https://fscan_backend.valicn.com/api'
+  process.env.REACT_APP_DASHBOARD_GRPC_WEB_URL || 'https://fscan-backend.valicn.com/api'
 );
 
 export const getDmesh = async (): Promise<PbDashboard.DmeshResponse.AsObject | null> => {
